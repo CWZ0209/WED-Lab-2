@@ -127,8 +127,19 @@ nav
 
 .m1
 {
-     flex-direction: column;
-    text-align: center;
+    flex-direction: column;
+    position: relative;
+    left: 200px; 
+    bottom: 150px;
+}
+
+.m2
+{
+    flex-direction: column;
+    position: relative;
+    left: 200px; 
+    top: 30px;
+    
 }
 
 .p1
@@ -162,12 +173,14 @@ nav
 }
 
 @media (max-width: 800px) {
-    .lh-grid {
-        grid-template-columns: 1fr; /* Stacks boxes vertically on mobile */
+    .lh-grid 
+    {
+        grid-template-columns: 1fr; 
     }
-    .hobby-flex {
+    .hobby-flex 
+    {
         flex-direction: column;
-        text-align: center;
+
     }
 }
 
@@ -250,7 +263,6 @@ form input, form select, form textarea
     border-radius: 20px;
     margin-bottom: 20px;
 }
-
 
 
 
