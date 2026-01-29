@@ -114,7 +114,7 @@ nav
     border-radius: 20px;
     padding: 60px;
     position: relative;
-    left: 100px;
+    right: 100px;
 }
 
 .music
@@ -247,6 +247,7 @@ form input, form select, form textarea
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 
 
 
