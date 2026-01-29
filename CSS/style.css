@@ -44,7 +44,6 @@ nav
 
 .sc1 
 {
-    position: relative;
     margin-bottom: 10px;
     border-radius: 20px;
 }
@@ -88,8 +87,6 @@ nav
 
 .lh
 {
-    position: relative;
-    left: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -97,7 +94,6 @@ nav
 
 .scout-bg 
 { 
-    position: relative;
     background-color: #F4B342; 
     border: 2px solid #d49520;
     width: 45%; 
@@ -132,14 +128,11 @@ nav
 
 .p1
 {
-    position: relative;
     border-radius: 20px;
 }
 
 .gp
 {
-    position: relative;
-    left: 120px;
     border-radius: 20px;
     background-color: #f6f5f8;
     grid-row: auto;
@@ -256,4 +249,5 @@ form input, form select, form textarea
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 
