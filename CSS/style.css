@@ -127,9 +127,9 @@ nav
 
 .m1
 {
-    position: relative;
-    left: 100px;
-    top: 50px;
+     flex-direction: column;
+    text-align: center;
+}
 
 .p1
 {
@@ -250,6 +250,7 @@ form input, form select, form textarea
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 
 
 
