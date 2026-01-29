@@ -1,103 +1,55 @@
-/* General Base Styles */
-body {
-    background-color: whitesmoke;
-    margin: 0;
-    padding: 20px;
-    font-family: 'Bricolage Grotesque', sans-serif;
-    color: #333;
-    overflow-x: hidden; /* Removes the horizontal scrollbar */
-}
+/* --- LEADERSHIP & HOBBIES LAYOUT --- */
 
-nav {
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-/* Header Section */
-.pp {
-    font-family: 'Gravitas One', cursive;
-    color: #137d8b;
-    text-align: center;
-    padding: 30px;
-    border-radius: 20px;
-    background-color: rgb(159, 186, 210);
-}
-
-/* Section Styling */
-.section-container {
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 25px;
-    overflow: hidden; 
-}
-
-.intro-bg { background-color: #A7AAE1; border: 2px solid #5d20b2; }
-.we-bg { background-color: #ffffff; border: 2px solid #ddd; }
-
-/* Box Layouts & Positioning */
-.float-left { float: left; margin-right: 20px; margin-bottom: 10px; border-radius: 20px; }
-.float-right { float: right; margin-left: 20px; margin-bottom: 10px; border-radius: 20px; width: 200px; }
-.rounded-img { border-radius: 20px; }
-
-/* --- CSS Grid Implementation (Requirement 2j) --- */
+/* Parent Grid Container */
 .lh-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns side-by-side */
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
     gap: 20px;
-}
-
-.scout-bg { background-color: #F4B342; border: 2px solid #d49520; padding: 25px; border-radius: 20px; }
-.hobby-bg { background-color: #73C8D2; border: 2px solid #4ea8b3; padding: 25px; border-radius: 20px; }
-
-.co { background-color: #a76e0c; padding: 15px; border-radius: 15px; text-align: center; color: white; }
-.hb { background-color: #137d8b; padding: 15px; border-radius: 15px; text-align: center; color: white; }
-
-/* --- Flexbox Implementation (Requirement 2i) --- */
-.hobby-item-flex {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.gp-img {
-    width: 120px;
-    border-radius: 15px;
-    background-color: #f6f5f8;
-    flex-shrink: 0;
-}
-
-.music-flex {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-/* Specific UI Elements */
-.lang {
-    background: #F5D3C4;
-    padding: 15px;
-    border-radius: 15px;
-    border: 1px solid #F2AEBB;
     margin-top: 20px;
-    display: inline-block;
 }
 
-/* --- Responsive Design (Requirement 2h) --- */
+/* Kept your scout design, removed the offsets */
+.scout-bg { 
+    background-color: #F4B342; 
+    border: 2px solid #d49520;
+    padding: 60px;
+    border-radius: 20px;
+    min-height: 400px;
+}
+
+/* Kept your hobby design, removed the offsets */
+.hobby-bg { 
+    background-color: #73C8D2; 
+    border: 2px solid #4ea8b3; 
+    padding: 60px;
+    border-radius: 20px;
+    min-height: 400px;
+}
+
+/* --- GUNPLA FLEXBOX ALIGNMENT --- */
+
+.hobby-item-flex {
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+}
+
+.gp {
+    border-radius: 20px;
+    background-color: #f6f5f8;
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+/* --- RESPONSIVE FIX --- */
+
 @media (max-width: 800px) {
     .lh-grid {
-        grid-template-columns: 1fr; /* Stacks column for mobile */
+        grid-template-columns: 1fr; /* Stacks boxes vertically on mobile */
     }
-
-    .float-left, .float-right {
-        float: none;
-        display: block;
-        margin: 0 auto 15px;
-        text-align: center;
-    }
-
     .hobby-item-flex {
-        flex-direction: column;
+        flex-direction: column; /* Stacks image/text on mobile */
         text-align: center;
     }
 }
+
+/* Keep the rest of your original CSS (pp, co, hb, nav, etc.) exactly as it is */
