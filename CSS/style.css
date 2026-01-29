@@ -2,6 +2,7 @@
 
 body 
 {
+    overflow-x: hidden;
     background-color: whitesmoke;
     margin: 0;
     padding: 20px;
@@ -85,11 +86,12 @@ nav
 
 }
 
-.lh
+.lh-grid 
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .scout-bg 
@@ -131,6 +133,13 @@ nav
     border-radius: 20px;
 }
 
+.hobby-flex 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .gp
 {
     border-radius: 20px;
@@ -149,22 +158,11 @@ nav
     float: right;
 }
 
-@media (max-width: 600px) 
-{
-    .float-left, .float-right 
-    {
-        float: none;
-        display: block;
-        margin: 0 auto 20px;
-        text-align: center;
+@media (max-width: 800px) {
+    .lh-grid {
+        grid-template-columns: 1fr; /* Stacks boxes vertically on mobile */
     }
-    .lh
-    {
-        grid-template-columns: 1fr; 
-    }
-    
-    .hobby-bg-flex
-    {
+    .hobby-flex {
         flex-direction: column;
         text-align: center;
     }
@@ -249,5 +247,6 @@ form input, form select, form textarea
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 
 
