@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Chin Wei Zhun</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a> 
+
+        <a href="contact.html">Contact Me</a> 
+    </nav>
+
+    <header class="hero">
+        <div class="profile-info">
+            <h1>Contact Me</h1>
+            <p>Have a question? Drop me a message!</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <div class="contact-info-grid">
+    
+                    <strong><i>Email</i></strong><br>
+                    zhunwchin@gmail.com
+                    <br>
+                    <br>
+                    <strong><i>Phone</i></strong><br>
+                    +6011-5993-4860
+                </div>
+            </div>
+
+            <div class="contact_info">
+                 <form action="mailto:zhunwchin@gmail.com" method="post" enctype="text/plain">
+                <label for="name"><b>Name:</b></label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="subject"><b>Subject:</b></label>
+                <select name="subject" id="subject">
+                    <option value="General">General Inquiry</option>
+                    <option value="Job">Job Opportunity</option>
+                </select>
+
+                <label for="message"><b>Message:</b></label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here..."></textarea>
+            </div>
+           
+                <div style="display: flex; gap: 10px;">
+                    <button type="submit" style="flex: 2; background-color: #007bff; color: white; border: none; padding: 15px; border-radius: 5px; cursor: pointer; font-weight: bold;">Send Message</button>
+                    <button type="reset" style="flex: 1; background-color: #f8f9fa; border: 1px solid #ddd; padding: 15px; border-radius: 5px; cursor: pointer;">Clear</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
