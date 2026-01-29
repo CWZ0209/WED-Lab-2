@@ -101,7 +101,7 @@ nav
     min-height: 400px;
     padding: 60px;
     border-radius: 20px;
-    text-align: center;
+    left: 100px;
 }
 
 .hobby-bg 
@@ -246,6 +246,7 @@ form input, form select, form textarea
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 
 
 
