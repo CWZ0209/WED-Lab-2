@@ -98,11 +98,10 @@ nav
 { 
     background-color: #F4B342; 
     border: 2px solid #d49520;
-    width: 45%; 
-    float: left; 
     min-height: 400px;
     padding: 60px;
     border-radius: 20px;
+    text-align: center;
 }
 
 .hobby-bg 
@@ -247,6 +246,7 @@ form input, form select, form textarea
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 
 
 
