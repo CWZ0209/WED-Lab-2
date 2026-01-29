@@ -91,7 +91,7 @@ nav
 {
     display: grid; 
     grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px;
+    gap: 10px;
     margin-top: 20px;
 }
 
@@ -114,8 +114,6 @@ nav
     min-height: 400px;
     border-radius: 20px;
     padding: 60px;
-    position: relative;
-    left: 20px;
 }
 
 .music
@@ -248,6 +246,7 @@ form input, form select, form textarea
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 
 
 
