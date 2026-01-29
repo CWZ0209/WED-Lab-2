@@ -125,6 +125,12 @@ nav
     margin-top: 10px;
 }
 
+.m1
+{
+    position: relative;
+    left: 100px;
+    top: 50px;
+
 .p1
 {
     border-radius: 20px;
@@ -244,6 +250,7 @@ form input, form select, form textarea
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 
 
 
