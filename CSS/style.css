@@ -113,7 +113,8 @@ nav
     min-height: 400px;
     border-radius: 20px;
     padding: 60px;
-    margin-left: 60px;
+    position: relative;
+    left: 200px;
 }
 
 .music
@@ -246,6 +247,7 @@ form input, form select, form textarea
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 
 
 
